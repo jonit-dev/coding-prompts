@@ -121,17 +121,12 @@ Small diff, no unrelated lint fixes.
 
 ## 4 · Quick Cheat-Sheet
 
-| Goal                     | Command                                     |
-| ------------------------ | ------------------------------------------- | ---------------------- |
-| Complexity heat-map      | `npx plato -r -d report src`                |
-| Track refs before delete | `ts-prune --show-unused`                    |
-| Git guardrail            | `git rebase -i --autosquash` before push    |
-| Goal                     | Command                                     |
-| ------------------------ | ------------------------------------------- | ---------------------- |
-| Complexity heat-map      | `npx plato -r -d report src`                |
-| Track refs before delete | `ts-prune --show-unused`                    |
-| Git guardrail            | `git rebase -i --autosquash` before push    |
-| Visualise deps           | `depcruise --include-only '^src' -T dot src | dot -Tsvg -o deps.svg` |
+| Goal                     | Command                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| Complexity heat-map      | `npx plato -r -d report src`                                                   |
+| Track refs before delete | `ts-prune --show-unused`                                                       |
+| Git guardrail            | `git rebase -i --autosquash` before push                                       |
+| Visualise deps           | `depcruise --include-only '^src' -T dot src && dot -Tsvg -o deps.svg deps.dot` |
 
 ---
 
